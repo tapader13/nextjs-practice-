@@ -1,0 +1,14 @@
+ssr
+{params,searchParams}
+csr
+usePathname().get()
+useSearchParams().get()
+fetch(api,{catch:"no-store"})
+
+fetch fakeapi to get posts/post/user
+suspance loading using user component   
+noStore() call for when we dont use api. remember it's not stable till now.
+seo
+dynamic metadata
+revalidateData("/blog")
+https://buy.stripe.com/test_7sI8yrgZeecJ9ry288
