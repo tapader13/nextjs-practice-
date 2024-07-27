@@ -5,7 +5,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useAppSelector } from '@/lib/hooks';
 import { User } from 'next-auth';
-import { Logout } from '../Logout';
 
 const Links = ({ user }: { user: User | undefined }) => {
   const links = [
