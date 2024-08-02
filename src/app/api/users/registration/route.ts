@@ -24,3 +24,4 @@
 //     return NextResponse.json({ message: 'Internal Server Error' });
 //   }
 // }
+export async function POST(request: Request) {}
