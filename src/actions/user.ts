@@ -6,7 +6,7 @@ import { redirect } from 'next/navigation';
 import bcrypt from 'bcrypt';
 import { CredentialsSignin } from 'next-auth';
 import { signIn, signOut } from '@/auth';
-const login = async (previousState, formData: FormData) => {
+const login = async (previousState: any, formData: FormData) => {
   const email = formData.get('email') as string;
   const password = formData.get('password') as string;
 
@@ -23,7 +23,7 @@ const login = async (previousState, formData: FormData) => {
   }
   redirect('/');
 };
-const register = async (previousState, formData: FormData) => {
+const register = async (previousState: any, formData: FormData) => {
   const username = formData.get('username') as string;
   const password = formData.get('password') as string;
   const email = formData.get('email') as string;
