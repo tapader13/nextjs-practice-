@@ -99,6 +99,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
 
               authProviderId: id,
             });
+            return true;
           } else {
             return true;
           }
